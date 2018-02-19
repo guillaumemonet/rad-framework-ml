@@ -1,0 +1,39 @@
+{
+    "name": "rad/rad-framework-ml",
+    "description": "RAD Framework Machine Learning Service.",
+    "authors": [
+        {
+            "name": "Guillaume Monet",
+            "email": "guillaume.monet@free.fr"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rad\\": "src/Rad/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "rad/rad-framework-ml",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/guillaumemonet/rad-framework-ml.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rad\\": "src/Rad/"
+                    }
+                }
+            }
+        }
+    ],
+    "require": {
+        "rad/rad-framework": "dev-master",
+        "php-ai/php-ml": "dev-master"
+    }
+}
