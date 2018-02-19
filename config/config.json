@@ -1,0 +1,14 @@
+{
+    "ml": {
+        "default": "apriori",
+        "classname": "Rad\\ML\\MLInterface",
+        "handlers": {
+            "apriori": {
+                "classname": "Rad\\ML\\AprioriMLHandler",
+                "config": {
+                    "file": "cache"
+                }
+            }
+        }
+    }
+}
