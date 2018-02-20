@@ -6,7 +6,7 @@ use Rad\Service\Service;
 
 /**
  * Description of Database.
- * @author Guillaume MonetI
+ * @author Guillaume Monet
  */
 final class ML extends Service {
 

@@ -2,6 +2,9 @@
 
 namespace Rad\ML;
 
+use Phpml\ModelManager;
+use Rad\Config\Config;
+
 class AprioriMLHandler implements MLInterface {
 
     private $apriori = null;
@@ -10,7 +13,7 @@ class AprioriMLHandler implements MLInterface {
 
     public function __construct() {
         $this->modelManager = new ModelManager();
-        $this->config = \Rad\Config\Config::getServiceConfig('ml', 'apriori')->config;
+        $this->config = Config::getServiceConfig('ml', 'apriori')->config;
     }
 
     public function predict(...$args) {
